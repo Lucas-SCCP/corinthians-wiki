@@ -11,3 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.proximosJogos {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.caixaJogos {
+  display: flex;
+  width: 100px;
+  height: 80px;
+  align-items: center;
+  border-radius: 5px;
+  margin-right: 5px;
+  background: #e0e1e2;
+  padding: 2px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.caixaJogosTextoData {
+  font-size: 10px;
+}
+
+.ultimoJogo {
+  margin-right: 0;
+}
+
+.divisor {
+  margin: 0 5px;
+  height: 80px;
+  width: 1px;
+  border: 1px solid #e0e1e2;
+}
+
+.no-padding-top {
+  padding-top: 0 !important;
+}
