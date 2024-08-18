@@ -1,15 +1,15 @@
 import React from 'react';
-import { Grid, Icon, DropdownMenu,
+import { Grid, Image, DropdownMenu,
     DropdownItem,
     Dropdown } from 'semantic-ui-react';
 
 const HeaderComponent = () => {
     return (
         <Grid.Row columns={2}>
-            <Grid.Column verticalAlign='middle' style={{ padding: '10px' }}>
-                <Icon name='heart' size='big' color='grey' />
+            <Grid.Column verticalAlign='middle'>
+                <Image src='/images/corinthianswiki-horizontal.png' style={{ width: '60%' }} />
             </Grid.Column>
-            <Grid.Column textAlign='right' style={{ padding: '10px' }}>
+            <Grid.Column textAlign='right'>
             <Dropdown
                 text='Lucas'
                 icon='user'

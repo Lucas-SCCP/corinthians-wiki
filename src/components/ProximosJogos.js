@@ -1,17 +1,17 @@
 import React from 'react';
-import { Grid, GridColumn } from 'semantic-ui-react';
+import { GridColumn, GridRow } from 'semantic-ui-react';
 
 const ProximosJogos = () => {
     return (
-        <Grid.Row columns={4} style={{ paddingLeft: '1rem' }}>
-            <GridColumn width={4} className='proximosJogos'>
+        <GridRow columns={4} className='flex-container no-padding-top'>
+            <GridColumn width={4}>
                 Último Jogo
             </GridColumn>
-            <GridColumn width={12} className='proximosJogos'>
+            <GridColumn width={12}>
                 Próximos Jogos
             </GridColumn>
 
-            <GridColumn width={4} className='proximosJogos'>
+            <GridColumn width={4} className='no-padding flex-item first-item'>
                 <div className='caixaJogos'>
                     <div>
                         <span>Bragantino 1x2 Corinthians</span>
@@ -21,37 +21,37 @@ const ProximosJogos = () => {
                     </div>
                 </div>
             </GridColumn>
-            <GridColumn width={4} className='proximosJogos'>
+            <GridColumn width={4} className='no-padding flex-item'>
                 <div className='caixaJogos'>
                     <div>
-                        <span className='caixaJogosTexto'>Fluminense x Corinthians</span>
+                        <span>Fluminense x Corinthians</span>
                     </div>
                     <div>
-                        <span className='caixaJogosTextoData'>17/08/2024</span>
+                        <span>17/08/2024</span>
                     </div>
                 </div>
             </GridColumn>
-            <GridColumn width={4} className='proximosJogos'>
+            <GridColumn width={4} className='no-padding flex-item'>
                 <div className='caixaJogos'> 
                     <div>
-                        <span className='caixaJogosTexto'>Corinthians x Bragantino</span>
+                        <span>Corinthians x Bragantino</span>
                     </div>
                     <div>
-                        <span className='caixaJogosTextoData'>20/08/2024</span>
+                        <span>20/08/2024</span>
                     </div>
                 </div>
             </GridColumn>
-            <GridColumn width={4} className='proximosJogos'>
+            <GridColumn width={4} className='no-padding flex-item last-item'>
                 <div className='caixaJogos'>
                     <div>
-                        <span className='caixaJogosTexto'>Fortaleza x Corinthians</span>
+                        <span>Fortaleza x Corinthians</span>
                     </div>
                     <div>
-                        <span className='caixaJogosTextoData'>25/08/2024</span>
+                        <span>25/08/2024</span>
                     </div>
                 </div>
             </GridColumn>
-        </Grid.Row>
+        </GridRow>
     );
 }
 

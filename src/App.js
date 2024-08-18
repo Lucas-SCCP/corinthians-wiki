@@ -8,7 +8,7 @@ import { Container, Grid } from 'semantic-ui-react';
 function App() {
   return (
     <Container>
-      <Grid>
+      <Grid columns={4} style={{ paddingTop: '1rem' }}>
         <HeaderComponent />
         <MenuComponent />
         <ProximosJogos />
