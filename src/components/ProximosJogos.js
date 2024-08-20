@@ -1,28 +1,44 @@
 import React from 'react';
-import { GridColumn, GridRow } from 'semantic-ui-react';
+import { Grid, Image, Icon } from 'semantic-ui-react';
 
 const ProximosJogos = () => {
     return (
-        <GridRow columns={4} className='flex-container no-padding-top'>
-            <GridColumn width={4}>
-                Último Jogo
-            </GridColumn>
-            <GridColumn width={12}>
-                Próximos Jogos
-            </GridColumn>
-
-            <GridColumn width={4} className='no-padding flex-item first-item'>
-                <div className='caixaJogos'>
-                    <div>
-                        <span>Bragantino 1x2 Corinthians</span>
-                    </div>
-                    <div>
-                        <span>13/08/2024</span>
-                    </div>
+        <Grid.Row columns={4} className='flex-container no-padding-top'>
+            <Grid.Column width={4} className='no-padding-right'>
+                <div style={{ margin: '0 2px'}}>
+                    Último Jogo
                 </div>
-            </GridColumn>
-            <GridColumn width={4} className='no-padding flex-item'>
-                <div className='caixaJogos'>
+            </Grid.Column>
+            <Grid.Column width={12} className='no-padding-left'>
+                <div style={{ margin: '0 2px'}}>
+                    Próximos Jogos
+                </div>
+            </Grid.Column>
+
+            <Grid.Column width={4} className='no-padding-right'>
+                <div className='caixaJogos flex-item'>
+                    <Grid className='no-padding no-margin'>
+                        <Grid.Row columns={3} className='no-padding no-margin'>
+                            <Grid.Column width={6} className='no-padding no-margin' style={{ textAlign: 'center' }}>
+                                <Icon fitted name='question circle' />
+                            </Grid.Column>
+                            <Grid.Column width={4} className='no-padding no-margin' style={{ textAlign: 'center' }}>
+                                1x2
+                            </Grid.Column>
+                            <Grid.Column width={6} className='no-padding no-margin' style={{ textAlign: 'center' }}>
+                                <Image src='/images/corinthianswiki.png' avatar style={{ marginRight: '0px' }} />
+                            </Grid.Column>
+                        </Grid.Row>
+                        <Grid.Row className='no-padding no-margin'>
+                            <Grid.Column className='no-padding no-margin' style={{ fontSize: '10px' }}>
+                                13/08/2024
+                            </Grid.Column>
+                        </Grid.Row>
+                    </Grid>
+                </div>
+            </Grid.Column>
+            <Grid.Column width={4} className='no-padding-left no-padding-right'>
+                <div className='caixaJogos flex-item'>
                     <div>
                         <span>Fluminense x Corinthians</span>
                     </div>
@@ -30,9 +46,9 @@ const ProximosJogos = () => {
                         <span>17/08/2024</span>
                     </div>
                 </div>
-            </GridColumn>
-            <GridColumn width={4} className='no-padding flex-item'>
-                <div className='caixaJogos'> 
+            </Grid.Column>
+            <Grid.Column width={4} className='no-padding-left no-padding-right'>
+                <div className='caixaJogos flex-item'> 
                     <div>
                         <span>Corinthians x Bragantino</span>
                     </div>
@@ -40,9 +56,9 @@ const ProximosJogos = () => {
                         <span>20/08/2024</span>
                     </div>
                 </div>
-            </GridColumn>
-            <GridColumn width={4} className='no-padding flex-item last-item'>
-                <div className='caixaJogos'>
+            </Grid.Column>
+            <Grid.Column width={4} className='no-padding-left'>
+                <div className='caixaJogos flex-item'>
                     <div>
                         <span>Fortaleza x Corinthians</span>
                     </div>
@@ -50,8 +66,8 @@ const ProximosJogos = () => {
                         <span>25/08/2024</span>
                     </div>
                 </div>
-            </GridColumn>
-        </GridRow>
+            </Grid.Column>
+        </Grid.Row>
     );
 }
 
