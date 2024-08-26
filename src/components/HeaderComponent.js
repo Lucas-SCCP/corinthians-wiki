@@ -17,6 +17,7 @@ const HeaderComponent = () => {
                 button
                 className='icon'
                 direction='left'
+                style={{ display: 'none' }}
             >
                 <DropdownMenu>
                     <DropdownItem icon='setting' text='Minha conta' />
